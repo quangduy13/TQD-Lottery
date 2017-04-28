@@ -60,7 +60,7 @@ public class ShowActivity extends AppCompatActivity {
 
 
     }
-    private void getData(){
+    private void getData(){//call API
         Call<HashMap> call = RestClient.getInstance().getLotteryService().getListLottery();
         call.enqueue(new Callback<HashMap>() {
             @Override

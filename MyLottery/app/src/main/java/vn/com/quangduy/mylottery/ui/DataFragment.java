@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.nio.BufferUnderflowException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -52,6 +53,8 @@ public class DataFragment extends Fragment {
     }
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
         Date date = new Date();
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy");
+        String year = ft.format(date);
         View view = inflater.inflate(R.layout.fragment_data,container,false);
 
         txtNumberDB = (TextView)view.findViewById(R.id.txtNumberDB);
@@ -65,6 +68,7 @@ public class DataFragment extends Fragment {
         txtNumber8 = (TextView)view.findViewById(R.id.txtNumber8);
         txtTime = (TextView)view.findViewById(R.id.txtTime);
 
+
         txtNumberDB.setText(showPrice().get(8));
         txtNumber1.setText(showPrice().get(0));
         txtNumber2.setText(showPrice().get(1));
@@ -74,7 +78,7 @@ public class DataFragment extends Fragment {
         txtNumber6.setText(showPrice().get(5));
         txtNumber7.setText(showPrice().get(6));
         txtNumber8.setText(showPrice().get(7));
-        txtTime.setText(showPrice().get(9) +"-2017");
+        txtTime.setText(showPrice().get(9) +"-"+year);
         return view;
     }
 

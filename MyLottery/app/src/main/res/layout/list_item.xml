@@ -31,6 +31,7 @@
             android:gravity="center"
             android:textSize="25dp"
             android:id="@+id/txtName"
+            android:ems="5"
             android:textStyle="bold"
             android:textColor="@color/main_color"
             android:fontFamily="sans-serif-condensed"

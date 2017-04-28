@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
         private List<String>lists;
 
+
         public ListLocalAdapter(Context context,List<String>lists){
             super(context,0,lists);
             this.context = context;
