@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="AG"
+            android:gravity="center"
+            android:background="@drawable/border_img_list"
+            android:layout_margin="5dp"
+            android:textColor="@color/color_white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/txtIcon"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="An Giang"
+            android:layout_weight="0.8"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:id="@+id/txtName"
+            android:textStyle="bold"
+            android:textColor="@color/main_color"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.3"
+            android:src="@drawable/next"
+            android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

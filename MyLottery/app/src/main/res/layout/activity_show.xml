@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả xổ số"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_main"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AN GIANG"
+        android:id="@+id/txtProvince"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_main"
+        android:layout_marginTop="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:text="MỚI NHẤT"
+            android:textColor="@color/color_white"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/btnNew"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChoose"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/main_color"
+            android:text="CHỌN NGÀY"
+            android:textColor="@color/color_white"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/content_view"
+        >
+
+    </FrameLayout>
+
+
+</LinearLayout>
