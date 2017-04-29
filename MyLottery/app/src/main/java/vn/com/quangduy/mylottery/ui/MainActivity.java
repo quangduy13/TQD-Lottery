@@ -2,6 +2,8 @@ package vn.com.quangduy.mylottery.ui;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,10 +16,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import butterknife.ButterKnife;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 import vn.com.quangduy.mylottery.R;
+import vn.com.quangduy.mylottery.dto.LotteryDTO;
+import vn.com.quangduy.mylottery.service.RestClient;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -88,10 +97,10 @@ public class MainActivity extends AppCompatActivity {
             itemHolder.txtName = (TextView)convertView.findViewById(R.id.txtName);
             itemHolder.txtIcon =(TextView)convertView.findViewById(R.id.txtIcon);
             for (int i =0; i<lists.size();i++){
-                    if(position == i){
-                        itemHolder.txtName.setText(lists.get(i));
-                        itemHolder.txtIcon.setText(NAME[i]);
-                    }
+                if(position == i){
+                    itemHolder.txtName.setText(lists.get(i));
+                    itemHolder.txtIcon.setText(NAME[i]);
+                }
             }
 
             return convertView;
@@ -105,5 +114,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
 }

@@ -1,209 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="26/4/2017"
-        android:id="@+id/txtTime"
-        android:gravity="center"
-        android:textSize="16dp"
-        android:textStyle="italic"
-        />
-
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/border_price"
-        >
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/txtGDB"
-            style="@style/price"
-            android:layout_weight="0.4"
-            android:text="Giải ĐB" />
-
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="112354"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_gravity="center"
+            android:text="26/4/2017"
+            android:id="@+id/txtTime"
             android:gravity="center"
-            android:layout_weight="0.6"
-            android:textColor="@color/colorRed"
-            android:ems="10"
-            android:id="@+id/txtNumberDB"
+            android:textSize="16dp"
+            android:textStyle="italic"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtGDB"
+                style="@style/price"
+                android:layout_weight="0.4"
+                android:text="Giải ĐB" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="112354"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:textColor="@color/colorRed"
+                android:ems="10"
+                android:id="@+id/txtNumberDB"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG1"
+                style="@style/price"
+                android:text="Giải Nhất" />
+
+            <TextView
+                style="@style/value"
+                android:text="112354"
+                android:id="@+id/txtNumber1"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG2"
+                style="@style/price"
+                android:text="Giải Nhì" />
+
+            <TextView
+                style="@style/value"
+                android:text="112354"
+                android:id="@+id/txtNumber2"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG3"
+                style="@style/price"
+                android:text="Giải Ba" />
+
+            <TextView
+                style="@style/value"
+                android:text="24077 - 25939"
+                android:id="@+id/txtNumber3"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG4"
+                style="@style/price"
+                android:text="Giải Tư" />
+
+            <TextView
+                style="@style/value"
+                android:text="14723 - 84344 - 57866 - 55883 - 93963 - 87384 - 17889"
+                android:id="@+id/txtNumber4"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG5"
+                style="@style/price"
+                android:text="Giải Năm" />
+
+            <TextView
+                style="@style/value"
+                android:text="9020"
+                android:id="@+id/txtNumber5"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG6"
+                style="@style/price"
+                android:text="Giải Sáu" />
+
+            <TextView
+                style="@style/value"
+                android:text="3421 - 7679 - 8389"
+                android:id="@+id/txtNumber6"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+
+            <TextView
+                android:id="@+id/txtG7"
+                style="@style/price"
+                android:text="Giải Bảy" />
+
+            <TextView
+                style="@style/value"
+                android:text="795"
+                android:id="@+id/txtNumber7"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:padding="7dp"
+            android:background="@drawable/border_price"
+            >
+            <TextView
+                android:id="@+id/txtG8"
+                style="@style/price"
+                android:text="Giải Tám" />
+
+            <TextView
+                style="@style/value"
+                android:text="98"
+                android:id="@+id/txtNumber8"
+                />
+        </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
 
-        <TextView
-            android:id="@+id/txtG1"
-            style="@style/price"
-            android:text="Giải Nhất" />
-
-        <TextView
-            style="@style/value"
-            android:text="112354"
-            android:id="@+id/txtNumber1"
-
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-
-        <TextView
-            android:id="@+id/txtG2"
-            style="@style/price"
-            android:text="Giải Nhì" />
-
-        <TextView
-            style="@style/value"
-            android:text="112354"
-            android:id="@+id/txtNumber2"
-
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-
-        <TextView
-            android:id="@+id/txtG3"
-            style="@style/price"
-            android:text="Giải Ba" />
-
-        <TextView
-            style="@style/value"
-            android:text="24077 - 25939"
-            android:id="@+id/txtNumber3"
-
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-
-        <TextView
-            android:id="@+id/txtG4"
-            style="@style/price"
-            android:text="Giải Tư" />
-
-        <TextView
-            style="@style/value"
-            android:text="14723 - 84344 - 57866 - 55883 - 93963 - 87384 - 17889"
-            android:id="@+id/txtNumber4"
-
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-
-        <TextView
-            android:id="@+id/txtG5"
-            style="@style/price"
-            android:text="Giải Năm" />
-
-        <TextView
-            style="@style/value"
-            android:text="9020"
-            android:id="@+id/txtNumber5"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-
-        <TextView
-            android:id="@+id/txtG6"
-            style="@style/price"
-            android:text="Giải Sáu" />
-
-        <TextView
-            style="@style/value"
-            android:text="3421 - 7679 - 8389"
-            android:id="@+id/txtNumber6"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-
-        <TextView
-            android:id="@+id/txtG7"
-            style="@style/price"
-            android:text="Giải Bảy" />
-
-        <TextView
-            style="@style/value"
-            android:text="795"
-            android:id="@+id/txtNumber7"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        android:padding="7dp"
-        android:background="@drawable/border_price"
-        >
-        <TextView
-            android:id="@+id/txtG8"
-            style="@style/price"
-            android:text="Giải Tám" />
-
-        <TextView
-            style="@style/value"
-            android:text="98"
-            android:id="@+id/txtNumber8"
-            />
-    </LinearLayout>
-</LinearLayout>
+</ScrollView>
